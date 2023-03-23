@@ -11,6 +11,18 @@
 *	Edit this section
 *
 * ======================================================= */
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Karla", Arial, sans-serif;
   line-height: 1.8;
@@ -18,11 +30,6 @@ body {
   font-weight: 400;
   background: #fafafa;
   color: gray; }
-  body.menu-show {
-    overflow: hidden;
-    position: fixed;
-    height: 100%;
-    width: 100%; }
 
 #colorlib-wrapper {
   height: 100%;
@@ -105,192 +112,23 @@ h1, h2, h3, h4, h5, h6 {
     #colorlib-page {
       padding-top: 5em; } }
 
-#colorlib-main-nav {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  padding: 4em 40px 40px 40px;
-  width: 360px;
-  height: 100%;
-  background: white;
-  z-index: 1002;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -moz-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -ms-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -o-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  overflow-y: scroll; }
-  @media screen and (max-width: 768px) {
-    #colorlib-main-nav {
-      width: 300px; } }
-  #colorlib-main-nav .colorlib-nav-toggle {
-    position: absolute;
-    top: 5px;
-    right: 40px;
-    padding: 20px;
-    height: 44px;
-    width: 44px;
-    background: rgba(0, 0, 0, 0.05);
-    line-height: 0;
-    padding: 0 !important;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
-    #colorlib-main-nav .colorlib-nav-toggle i {
-      top: 18px !important;
-      left: 0 !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      line-height: 0;
-      text-indent: 0; }
-    #colorlib-main-nav .colorlib-nav-toggle.show {
-      visibility: visible;
-      opacity: 1; }
-    #colorlib-main-nav .colorlib-nav-toggle:hover {
-      background: black; }
-      #colorlib-main-nav .colorlib-nav-toggle:hover i::before, #colorlib-main-nav .colorlib-nav-toggle:hover i::after {
-        content: '';
-        width: 20px;
-        height: 1px;
-        background: #fff;
-        position: absolute;
-        left: 0; }
-  .menu-show #colorlib-main-nav {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); }
-  #colorlib-main-nav ul {
-    padding: 0;
-    margin: 0 0 3em 0; }
-    @media screen and (max-width: 768px) {
-      #colorlib-main-nav ul {
-        padding: 20px 0 0 0; } }
-    #colorlib-main-nav ul li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      text-align: left; }
-      #colorlib-main-nav ul li a {
-        display: block;
-        color: black;
-        font-size: 14px;
-        padding: 10px 0;
-        text-transform: uppercase;
-        font-weight: 400; }
-        @media screen and (max-width: 768px) {
-          #colorlib-main-nav ul li a {
-            font-size: 16px; } }
-        #colorlib-main-nav ul li a:hover, #colorlib-main-nav ul li a:active, #colorlib-main-nav ul li a:focus {
-          color: black;
-          outline: none;
-          text-decoration: none; }
-      #colorlib-main-nav ul li.active a {
-        color: #222B13; }
-  #colorlib-main-nav .form-group {
-    margin-bottom: 40px;
-    position: relative;
-    width: 100%; }
-    @media screen and (max-width: 480px) {
-      #colorlib-main-nav .form-group {
-        width: 100%; } }
-    #colorlib-main-nav .form-group input::-webkit-input-placeholder {
-      color: #333333; }
-    #colorlib-main-nav .form-group input::-moz-input-placeholder {
-      color: #333333; }
-    #colorlib-main-nav .form-group input::-ms-input-placeholder {
-      color: #333333; }
-    #colorlib-main-nav .form-group input::-o-input-placeholder {
-      color: #333333; }
-    #colorlib-main-nav .form-group input::input-placeholder {
-      color: #333333; }
-  #colorlib-main-nav #search {
-    font-size: 14px;
-    width: 100%;
-    padding-right: 3em;
-    border: none;
-    border: 2px solid #f2f2f2;
-    background: #fafafa;
-    color: #333333 !important; }
-  #colorlib-main-nav button {
-    position: absolute;
-    top: 0;
-    right: -4px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    border-radius: 0;
-    background: #222B13;
-    color: #fff;
-    border: none;
-    padding: 16px; }
-  #colorlib-main-nav #email {
-    font-size: 18px;
-    width: 100%;
-    border: none;
-    border: 2px solid #fff;
-    background: #fff;
-    color: #333333 !important; }
-  #colorlib-main-nav .gallery {
-    float: left;
-    width: 50%;
-    height: 150px;
-    position: relative;
-    display: table;
-    z-index: 0;
-    text-decoration: none; }
-    @media screen and (max-width: 768px) {
-      #colorlib-main-nav .gallery {
-        width: 25%; } }
-    @media screen and (max-width: 480px) {
-      #colorlib-main-nav .gallery {
-        width: 50%; } }
-    #colorlib-main-nav .gallery:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      content: '';
-      background: rgba(0, 0, 0, 0.3);
-      opacity: 0;
-      z-index: -1;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s; }
-    #colorlib-main-nav .gallery span {
-      display: table-cell;
-      vertical-align: middle;
-      height: 150px;
-      opacity: 0;
-      -webkit-transition: 1s;
-      -o-transition: 1s;
-      transition: 1s; }
-      #colorlib-main-nav .gallery span i {
-        color: #fff;
-        font-size: 20px; }
-    #colorlib-main-nav .gallery:hover:after, #colorlib-main-nav .gallery:focus:after {
-      opacity: 1; }
-    #colorlib-main-nav .gallery:hover span, #colorlib-main-nav .gallery:focus span {
-      opacity: 1; }
+  .topnav {
+      position: absolute; 
+      width: 100%; 
+      height: 70px;
+      text-align: right;
+      
+  }
+
+  .topnav a {
+      color: #002036;
+      text-align: center;
+      padding: 25px 16px;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline;
+
+  }
 
 header {
   padding: 2em 0;
@@ -1264,7 +1102,7 @@ input[type="text"] {
   color: #222B13; }
 
 #footer {
-  padding: 8em 0;
+  padding: 4em 0;
   display: block;
   width: 100%; }
   #footer h2 {
