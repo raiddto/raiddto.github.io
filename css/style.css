@@ -31,11 +31,11 @@ body {
   background: #fafafa;
   color: gray; }
 
-#colorlib-wrapper {
+#wrapper {
   height: 100%;
   width: 100%;
   overflow: hidden; }
-  #colorlib-wrapper > div {
+  #wrapper > div {
     width: 100%;
     height: 100%;
     overflow-y: hidden; }
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fcfcfc;
   background: #556b2f; }
 
-#colorlib-page {
+#page {
   position: relative;
   -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -moz-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -93,14 +93,14 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1); }
-  .menu-show #colorlib-page {
+  .menu-show #page {
     -webkit-transform: scale(0.99);
     -moz-transform: scale(0.99);
     -ms-transform: scale(0.99);
     -o-transform: scale(0.99);
     transform: scale(0.99);
     position: relative; }
-    .menu-show #colorlib-page:after {
+    .menu-show #page:after {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
       content: '';
       background: rgba(0, 0, 0, 0.4); }
   @media screen and (max-width: 768px) {
-    #colorlib-page {
+    #page {
       padding-top: 5em; } }
 
   .topnav {
@@ -141,9 +141,9 @@ header {
   @media screen and (max-width: 768px) {
     header {
       padding: 2em 0; } }
-  header .colorlib-navbar-brand {
+  header .navbar-brand {
     float: left; }
-    header .colorlib-navbar-brand .colorlib-logo {
+    header .navbar-brand .logo {
       font-size: 20px;
       text-transform: uppercase;
       color: #000;
@@ -154,37 +154,37 @@ header {
       display: block;
       text-align: center;
       background: #000; }
-      header .colorlib-navbar-brand .colorlib-logo span {
+      header .navbar-brand .logo span {
         display: block;
         margin-bottom: 0;
         line-height: 1.2;
         color: #fff; }
-      header .colorlib-navbar-brand .colorlib-logo:hover {
+      header .navbar-brand .logo:hover {
         text-decoration: none !important; }
-      header .colorlib-navbar-brand .colorlib-logo:active, header .colorlib-navbar-brand .colorlib-logo:focus {
+      header .navbar-brand .logo:active, header .navbar-brand .logo:focus {
         outline: none;
         text-decoration: none; }
 
-#colorlib-services,
-#colorlib-contact,
-#colorlib-work,
-#colorlib-blog,
-#colorlib-testimony,
-#colorlib-progress,
-#colorlib-contact,
-#colorlib-about {
+#services,
+#contact,
+#work,
+#blog,
+#testimony,
+#progress,
+#contact,
+#about {
   padding: 10em 0;
   clear: both;
   position: relative; }
   @media screen and (max-width: 768px) {
-    #colorlib-services,
-    #colorlib-contact,
-    #colorlib-work,
-    #colorlib-blog,
-    #colorlib-testimony,
-    #colorlib-progress,
-    #colorlib-contact,
-    #colorlib-about {
+    #services,
+    #contact,
+    #work,
+    #blog,
+    #testimony,
+    #progress,
+    #contact,
+    #about {
       padding: 5em 0; } }
 
 .rotate {
@@ -619,13 +619,13 @@ header {
         height: 1px;
         background: #000; }
 
-#colorlib-blog .owl-carousel {
+#blog .owl-carousel {
   z-index: 0; }
 
-#colorlib-blog .owl-carousel .owl-stage-outer {
+#blog .owl-carousel .owl-stage-outer {
   z-index: -1; }
 
-#colorlib-blog .owl-theme .owl-controls {
+#blog .owl-theme .owl-controls {
   margin-top: -10px;
   z-index: 1;
   position: absolute;
@@ -634,7 +634,7 @@ header {
   right: 0;
   margin-top: -30px; }
 
-#colorlib-blog .owl-theme .owl-controls .owl-nav [class*=owl-] {
+#blog .owl-theme .owl-controls .owl-nav [class*=owl-] {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -646,7 +646,7 @@ header {
   background: #fff;
   padding: 5px 5px;
   opacity: 1; }
-  #colorlib-blog .owl-theme .owl-controls .owl-nav [class*=owl-] .owl-direction {
+  #blog .owl-theme .owl-controls .owl-nav [class*=owl-] .owl-direction {
     background: transparent;
     color: #000;
     -webkit-box-shadow: none;
@@ -758,12 +758,12 @@ header {
   .article:hover .meta {
     background: #fff; }
 
-#colorlib-testimony .owl-theme .owl-dots .owl-dot.active span,
-#colorlib-testimony .owl-theme .owl-dots .owl-dot:hover span {
+#testimony .owl-theme .owl-dots .owl-dot.active span,
+#testimony .owl-theme .owl-dots .owl-dot:hover span {
   height: 3px;
   background: #000; }
 
-#colorlib-testimony .owl-theme .owl-dots .owl-dot span {
+#testimony .owl-theme .owl-dots .owl-dot span {
   width: 30px;
   height: 2px;
   background: #e6e6e6;
@@ -942,17 +942,17 @@ header {
       visibility: visible;
       opacity: 1; }
 
-.colorlib-nav-toggle {
+.nav-toggle {
   cursor: pointer;
   text-decoration: none; }
-  .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
+  .nav-toggle.active i::before, .nav-toggle.active i::after {
     background: #000; }
-  .colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
+  .nav-toggle.dark.active i::before, .nav-toggle.dark.active i::after {
     background: #000; }
-  .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
+  .nav-toggle:hover, .nav-toggle:focus, .nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
-  .colorlib-nav-toggle i {
+  .nav-toggle i {
     position: relative;
     display: -moz-inline-stack;
     display: inline-block;
@@ -968,10 +968,10 @@ header {
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
-    .menu-show .colorlib-nav-toggle i {
+    .menu-show .nav-toggle i {
       background: #000;
       color: #fff; }
-    .colorlib-nav-toggle i::before, .colorlib-nav-toggle i::after {
+    .nav-toggle i::before, .nav-toggle i::after {
       content: '';
       width: 20px;
       height: 2px;
@@ -981,37 +981,37 @@ header {
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
-      .menu-show .colorlib-nav-toggle i::before, .menu-show .colorlib-nav-toggle i::after {
+      .menu-show .nav-toggle i::before, .menu-show .nav-toggle i::after {
         background: #333333; }
-  .colorlib-nav-toggle.dark i {
+  .nav-toggle.dark i {
     position: relative;
     color: #fff;
     background: #fff;
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out; }
-    .colorlib-nav-toggle.dark i::before, .colorlib-nav-toggle.dark i::after {
+    .nav-toggle.dark i::before, .nav-toggle.dark i::after {
       background: #fff;
       -webkit-transition: 0.2s;
       -o-transition: 0.2s;
       transition: 0.2s; }
 
-.colorlib-nav-toggle i::before {
+.nav-toggle i::before {
   top: -7px; }
 
-.colorlib-nav-toggle i::after {
+.nav-toggle i::after {
   bottom: -7px; }
 
-.colorlib-nav-toggle:hover i::before {
+.nav-toggle:hover i::before {
   top: -10px; }
 
-.colorlib-nav-toggle:hover i::after {
+.nav-toggle:hover i::after {
   bottom: -10px; }
 
-.colorlib-nav-toggle.active i {
+.nav-toggle.active i {
   background: transparent; }
 
-.colorlib-nav-toggle.active i::before {
+.nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
@@ -1019,7 +1019,7 @@ header {
   -o-transform: rotateZ(45deg);
   transform: rotateZ(45deg); }
 
-.colorlib-nav-toggle.active i::after {
+.nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
@@ -1027,7 +1027,7 @@ header {
   -o-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg); }
 
-.colorlib-nav-toggle {
+.nav-toggle {
   float: right;
   z-index: 1003;
   position: relative;
@@ -1036,7 +1036,7 @@ header {
   cursor: pointer;
   margin-top: 0; }
   @media screen and (max-width: 768px) {
-    .colorlib-nav-toggle {
+    .nav-toggle {
       display: block;
       top: 0px; } }
 
@@ -1094,10 +1094,10 @@ input[type="text"] {
 .form-group {
   margin-bottom: 30px; }
 
-.colorlib-social-icons a:hover, .colorlib-social-icons a:focus {
+.social-icons a:hover, .social-icons a:focus {
   text-decoration: none !important; }
 
-.colorlib-social-icons i {
+.social-icons i {
   font-size: 24px;
   color: #222B13; }
 
@@ -1112,9 +1112,9 @@ input[type="text"] {
     margin-bottom: 2em; }
   #footer p:last-child {
     margin-bottom: 0; }
-  #footer p.colorlib-social-icons a:hover, #footer p.colorlib-social-icons a:focus {
+  #footer p.social-icons a:hover, #footer p.social-icons a:focus {
     text-decoration: none !important; }
-  #footer p.colorlib-social-icons i {
+  #footer p.social-icons i {
     font-size: 24px;
     color: #222B13; }
   #footer p .block {

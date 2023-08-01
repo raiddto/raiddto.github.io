@@ -54,26 +54,26 @@
 	</head>
 	<body>
 	
-	<div id="colorlib-page">
+	<div id="page">
 		<header>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="colorlib-navbar-brand">
-							<a class="colorlib-logo" href="/"><span>rai</span></a>
+						<div class="navbar-brand">
+							<a class="logo" href="/"><span>rai</span></a>
 						</div>
 						<div class="topnav">
 							<a href="/">About</a>
-							<a href="#colorlib-services">Services</a>
-							<a href="#colorlib-work">Works</a>
-							<a href="#colorlib-testimony">Testimonials</a>
-							<a href="#colorlib-contact">Contact</a>
+							<a href="#services">Services</a>
+							<a href="#work">Works</a>
+							<a href="#testimony">Testimonials</a>
+							<a href="#contact">Contact</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-		<div id="colorlib-about">
+		<div id="about">
 			<div class="container">
 				<div class="row text-center">
 					<h2 class="bold">About</h2>
@@ -98,19 +98,19 @@
 									<h2 class="heading">About</h2>
 								</div>
 								<p>I'm a programmer from the <a href="https://www.facebook.com/peo1968/">Provincial Engineering Office</a>. I've been developing programs and websites for some time now, and I find it to be a really fulfilling and exciting career. I enjoy solving complex problems and creating user-friendly interfaces that people can use easily. I'm also skilled in photo and video editing, which allows me to explore my creative side and bring out the best in every project. Overall, I'm always striving to improve my skills and produce high-quality work that my clients and colleagues will be proud of.</p>
-								<p class="colorlib-social-icons">
+								<p class="social-icons">
 									<a href="https://www.linkedin.com/in/ryanabcede/"><i class="icon-linkedin3"></i></a>
 									<a href="https://www.facebook.com/raiddto/"><i class="icon-facebook3"></i></a>
 									<a href="https://www.instagram.com/raidadto/"><i class="icon-instagram2"></i></a>
 								</p>
-								<p><a href="#" class="btn btn-primary btn-outline">Contact Me!</a></p>
+								<p><a href="#contact" class="btn btn-primary btn-outline">Contact Me!</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="colorlib-services">
+		<div id="services">
 			<div class="container">
 				<div class="row text-center">
 					<h2 class="bold">Services</h2>
@@ -179,7 +179,7 @@
 			</div>
 		</div>
 
-		<div id="colorlib-work">
+		<div id="work">
 			<div class="container">
 				<div class="row text-center">
 					<h2 class="bold">Works</h2>
@@ -257,7 +257,7 @@
 							</a>
 							<div class="col-md">
 								<div class="desc">
-									<p>Document Identification and Tracking System (DoITS) for the Provincial Engineering Office (PEO). DoITS is a powerful document tracking system that I designed from the ground up, which includes a database and many advanced features. One of the key additions I made to the system was the integration of Geographic Information System (GIS) technology, which provides a transparent and user-friendly way for users to view details of PEO projects. With GIS, users can easily browse a map of the area and click on specific projects to view all relevant information. This functionality is similar to Google Maps, and it greatly enhances the user experience and overall effectiveness of the DoITS system.</p>
+									<p>Phiire Corporation has been an instrument in expanding real estate business into the highly competitive US market. Their strategic guidance, extensive market knowledge, and unwavering dedication have played a pivotal role in our success, and we confidently recommend their services to anyone seeking to thrive in the real estate industry.</p>
 								</div>
 							</div>
 						</div>
@@ -282,7 +282,7 @@
 			</div>
 		</div>
 
-		<div id="colorlib-testimony">
+		<div id="testimony">
 			<div class="container">
 				<div class="row text-center">
 					<h2 class="bold">Testimonies</h2>
@@ -336,7 +336,7 @@
 							<div class="col-md-12 text-center">
 								<div class="testimony">
 									<blockquote>
-										<p>"When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
+										<p>""DoITS has been a game-changer for our provincial engineering office. Its efficient document tracking capabilities have streamlined our processes, paperless, ensuring smooth collaboration and timely project completions. Highly recommended for any engineering office seeking enhanced productivity."</p>
 										<span>" &mdash; Engr. Mario Batar</span>
 									</blockquote>
 								</div>
@@ -347,7 +347,7 @@
 			</div>
 		</div>
 		
-		<div id="colorlib-contact">
+		<div id="contact">
 			<div class="container">
 				<div class="row text-center">
 					<h2 class="bold">Contact</h2>
@@ -439,6 +439,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+
+    <script>
+        const smoothScroll = (target) => {
+            const element = document.querySelector(target);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        };
+
+        const links = document.querySelectorAll('.topnav a');
+
+        links.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent the default link behavior
+                const target = link.getAttribute('href'); // Get the target section from the href attribute
+                smoothScroll(target); // Call the smoothScroll function passing the target section
+            });
+        });
+    </script>
 
 	</body>
 </html>
