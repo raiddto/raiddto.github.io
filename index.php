@@ -1,3 +1,25 @@
+<!-- <?php
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	    $to = "hackroot21@gmail.com";
+	    $subject = "CV Website";
+	    $message = "Name: " . $_POST["name"] . "\n";
+	    $message .= "Email: " . $_POST["email"] . "\n";
+	    $message .= "Message: " . $_POST["message"];
+
+	    $headers = "From: " . $_POST["email"];
+
+        if (mail($to, $subject, $message, $headers)) {
+	        echo '<script>';
+	        echo 'alert("Email sent successfully!");';
+	        echo '</script>';
+	    } else {
+	        echo '<script>';
+	        echo 'alert("Email could not be sent. Please try again later.");';
+	        echo '</script>';
+	    }
+	}
+?> -->
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -67,7 +89,7 @@
 							<a href="#services">Services</a>
 							<a href="#work">Works</a>
 							<a href="#testimony">Testimonials</a>
-							<a href="#contact">Contact</a>
+							<!-- <a href="#contact">Contact</a> -->
 						</div>
 					</div>
 				</div>
@@ -99,11 +121,10 @@
 								</div>
 								<p>I'm a programmer from the <a href="https://www.facebook.com/peo1968/">Provincial Engineering Office</a>. I've been developing programs and websites for some time now, and I find it to be a really fulfilling and exciting career. I enjoy solving complex problems and creating user-friendly interfaces that people can use easily. I'm also skilled in photo and video editing, which allows me to explore my creative side and bring out the best in every project. Overall, I'm always striving to improve my skills and produce high-quality work that my clients and colleagues will be proud of.</p>
 								<p class="social-icons">
-									<a href="https://www.linkedin.com/in/ryanabcede/"><i class="icon-linkedin3"></i></a>
-									<a href="https://www.facebook.com/raiddto/"><i class="icon-facebook3"></i></a>
-									<a href="https://www.instagram.com/raidadto/"><i class="icon-instagram2"></i></a>
+									<a href="https://www.linkedin.com/in/ryanabcede/" title="LinkedIn"><i class="icon-linkedin3"></i></a>
+									<a href="https://resume.io/r/PtlIfFnrS" title="Resume"><i class="icon-file"></i></a>
 								</p>
-								<p><a href="#contact" class="btn btn-primary btn-outline">Contact Me!</a></p>
+								<!-- <p><a href="#contact" class="btn btn-primary btn-outline">Contact Me!</a></p> -->
 							</div>
 						</div>
 					</div>
@@ -137,7 +158,7 @@
 											<ul>
 												<li>HTML / CSS</li>
 												<li>WordPress</li>
-												<li>Joomla</li>
+												<li>Flutter</li>
 											</ul>
 										</div>
 										<div class="services animate-box">
@@ -145,7 +166,7 @@
 											<ul>
 												<li>PHP</li>
 												<li>Javascript</li>
-												<li>Python</li>
+												<li>Dart</li>
 												<li>SQL</li>
 												<li>Git</li>
 											</ul>
@@ -200,7 +221,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="#" class="work-img" style="background-image: url(images/work-1.jpg);">
+							<a href="http://compassbooking.au/" class="work-img" style="background-image: url(images/work-1.jpg);">
 								<div class="display-t">
 									<div class="work-name">
 										<h2>Compass Booking</h2>
@@ -216,10 +237,10 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="#" class="work-img" style="background-image: url(images/work-2.jpg);">
+							<a href="https://www.cch.care/" class="work-img" style="background-image: url(images/work-2.jpg);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Hospital Hospice CC</h2>
+										<h2>Compassionate Care Hospice</h2>
 									</div>
 								</div>
 							</a>
@@ -232,10 +253,10 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="#" class="work-img" style="background-image: url(images/work-3.jpg);">
+							<a href="http://gftt.ph/" class="work-img" style="background-image: url(images/work-3.jpg);">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Unahon Travel and Tours</h2>
+										<h2>Great First Travel and Tours</h2>
 									</div>
 								</div>
 							</a>
@@ -248,7 +269,7 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="#" class="work-img" style="background-image: url(images/work-4.jpg);">
+							<a href="https://pipeline.turbo-bpo.com/" class="work-img" style="background-image: url(images/work-4.jpg);">
 								<div class="display-t">
 									<div class="work-name">
 										<h2>PhIIRE</h2>
@@ -264,7 +285,7 @@
 					</div>
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="#" class="work-img" style="background-image: url(images/work-5.jpg);">
+							<a href="https://www.facebook.com/peo1968/" class="work-img" style="background-image: url(images/work-5.jpg);">
 								<div class="display-t">
 									<div class="work-name">
 										<h2>DOITS</h2>
@@ -306,8 +327,8 @@
 							<div class="col-md-12 text-center">
 								<div class="testimony">
 									<blockquote>
-										<p>"Your programming skills are truly impressive! Your ability to write clean, efficient code is a testament to your dedication and expertise in the field. Your programs always work flawlessly and you consistently exceed expectations. It's a pleasure to work with someone who is so talented and committed to their craft. Keep up the great work!</p>
-										<span>" &mdash; Anna Faye Villaflor</span>
+										<p>"Your programming skills are truly impressive! Your ability to write clean, efficient code is a testament to your dedication and expertise in the field. Your programs always work flawlessly and you consistently exceed expectations. It's a pleasure to work with someone who is so talented and committed to their craft. Keep up the great work!"</p>
+										<span>&mdash; Anna Faye Villaflor (PhIIRE Corp HR)</span>
 									</blockquote>
 								</div>
 							</div>
@@ -316,8 +337,8 @@
 							<div class="col-md-12 text-center">
 								<div class="testimony">
 									<blockquote>
-										<p>"I recently used this compass booking website and I must say, I was thoroughly impressed with the ease of use and the range of options available. The booking process was seamless and the site provided detailed information about the ski cabins and equipment available for rent. The prices were also very reasonable, making it easy for me to plan a budget-friendly ski trip. Overall, I highly recommend this website to anyone looking to book a ski trip, whether you're a seasoned pro or a first-time skier.</p>
-										<span>" &mdash; Jeremy Roy</span>
+										<p>"I recently used this compass booking website and I must say, I was thoroughly impressed with the ease of use and the range of options available. The booking process was seamless and the site provided detailed information about the ski cabins and equipment available for rent. The prices were also very reasonable, making it easy for me to plan a budget-friendly ski trip. Overall, I highly recommend this website to anyone looking to book a ski trip, whether you're a seasoned pro or a first-time skier."</p>
+										<span>&mdash; Jeremy Roy (Compass Booking Founder)</span>
 									</blockquote>
 								</div>
 							</div>
@@ -326,8 +347,8 @@
 							<div class="col-md-12 text-center">
 								<div class="testimony">
 									<blockquote>
-										<p>"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-										<span>" &mdash; Barth Unahon</span>
+										<p>"Great First Travel and Tour's innovative booking website has revolutionized travel planning. With effortless navigation and seamless booking, we're redefining how travelers explore the world."</p>
+										<span>&mdash; Barth Unahon (Great First Travel and Tour Owner)</span>
 									</blockquote>
 								</div>
 							</div>
@@ -336,8 +357,8 @@
 							<div class="col-md-12 text-center">
 								<div class="testimony">
 									<blockquote>
-										<p>""DoITS has been a game-changer for our provincial engineering office. Its efficient document tracking capabilities have streamlined our processes, paperless, ensuring smooth collaboration and timely project completions. Highly recommended for any engineering office seeking enhanced productivity."</p>
-										<span>" &mdash; Engr. Mario Batar</span>
+										<p>"DoITS has been a game-changer for our provincial engineering office. Its efficient document tracking capabilities have streamlined our processes, paperless, ensuring smooth collaboration and timely project completions. Highly recommended for any engineering office seeking enhanced productivity."</p>
+										<span>&mdash; Engr. Mario Batar (Provincial Engineering Office Head Engineer)</span>
 									</blockquote>
 								</div>
 							</div>
@@ -347,7 +368,7 @@
 			</div>
 		</div>
 		
-		<div id="contact">
+		<!-- <div id="contact">
 			<div class="container">
 				<div class="row text-center">
 					<h2 class="bold">Contact</h2>
@@ -377,33 +398,35 @@
 							</div>
 							<div class="col-md-7 col-md-push-1 animate-box">
 								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+									<form method="post" action="">
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea class="form-control" id="" cols="30" rows="7" placeholder="Message" name="message"></textarea>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Name" name="name">
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="Email" name="email">
+											</div>
 										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="submit" value="Send Message" class="btn btn-primary">
+										<div class="col-md-12">
+											<div class="form-group">
+												<button type="submit" class="btn btn-primary">Send Message</button>
+											</div>
 										</div>
-									</div>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<footer>
 			<div id="footer">
