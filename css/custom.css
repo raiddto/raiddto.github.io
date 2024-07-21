@@ -13,9 +13,23 @@
     padding: 10px 15px; /* Reduced padding */
     border-radius: 50%; /* Circular button */
     font-size: 16px; /* Slightly reduced font size */
-  }
+}
   
-  #scrollTopBtn:hover {
-    background-color: #556B2F; /* Darker blue color on hover */
-  }
+#scrollTopBtn:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
   
+/* Fixed position for the header */
+#myHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    transition: background-color 0.3s ease; /* Add transition for smoother effect */
+}
+
+/* Add background color and transition effect when scrolled */
+#myHeader.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* Transparent white */
+}
